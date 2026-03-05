@@ -8,8 +8,8 @@ let prime n =
         | 1 -> true
         | _ when n % d = 0 -> false
         | _ -> maxDivider(d - 1)
-   match n with
-   | n when n < 2 -> false
-   | _ -> maxDivider(n - 1)
+    match n with
+    | _ when n < 2 -> false
+    | _ -> maxDivider(n - 1)
 
 
