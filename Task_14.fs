@@ -49,7 +49,7 @@ let rec plus (xs1, xs2) =
             then head2 :: plus (xs1, tail2)
         elif head1 < head2
             then head1 :: plus (tail1, xs2)
-        else head1 :: plus (tail1, tail2)
+        else head1 :: head2 :: plus (tail1, tail2)
 
 // 40.2.5
 let rec minus (xs1, xs2) =
