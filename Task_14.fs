@@ -85,7 +85,7 @@ let rec sort lst =
     let min = smallest lst
     match min with
     | None -> []
-    | Some min -> min :: sort (delete (small, lst))
+    | Some min -> min :: sort (delete (min, lst))
 
 // 40.4
 let rec revrev lst =
