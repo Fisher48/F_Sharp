@@ -1,8 +1,8 @@
 // 48.4.1
-let rec fibo1 (n, n1, n2) = 
-    match n, n1, n2 with
-    | (n, n1, n2) when n < 1 -> n2
-    | _ -> fibo1 (n-1, n2+n1, n1)
+let rec fibo1 n n1 n2 = 
+    match n with
+    | 0 -> n2
+    | _ -> fibo1 (n-1) (n2+n1) n1
 
 // 48.4.2
 let rec fibo2 n c = 
